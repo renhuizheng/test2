@@ -1,1 +1,3 @@
 首先来科普一下。所谓parser，一般是指把某种格式的文本（字符串）转换成某种数据结构的过程。最常见的parser，是把程序文本转换成编译器内部的一种叫做“抽象语法树”（AST）的数据结构。也有简单一些的parser，用于处理CSV，JSON，XML之类的格式。
+
+举个例子，一个处理算数表达式的parser，可以把“1+2”这样的，含有1，+，2三个字符的字符串，转换成一个对象（object）。这个对象就像new BinaryExpression(ADD, new Number(1), new Number(2))这样的Java构造函数调用生成出来的那样。
